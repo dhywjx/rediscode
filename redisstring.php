@@ -5,7 +5,7 @@
  *Date:2018/4/30
  *Time:11:11
  */
-$redis = new Redis();
+$redis = new \Redis();
 $redis->connect("139.224.117.254", 7200);
 $redis->delete("test");
 $redis->set("test", "wangjx");
